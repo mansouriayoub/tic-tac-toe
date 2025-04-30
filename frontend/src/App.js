@@ -115,7 +115,7 @@ function App() {
       <div className="flex items-center gap-8 mb-6">
         <div className="flex items-center">
           <img 
-            src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4" 
+            src={PLAYER_X_IMAGE} 
             alt="X" 
             className="w-10 h-10 object-cover rounded-full mr-2"
           />
@@ -123,7 +123,7 @@ function App() {
         </div>
         <div className="flex items-center">
           <img 
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" 
+            src={PLAYER_O_IMAGE} 
             alt="O" 
             className="w-10 h-10 object-cover rounded-full mr-2"
           />
