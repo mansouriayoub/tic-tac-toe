@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
+  // Images for X and O
+  const PLAYER_X_IMAGE = "https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4";
+  const PLAYER_O_IMAGE = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e";
+  
   // Game state
   const [board, setBoard] = useState(Array(9).fill(null));
   const [isXNext, setIsXNext] = useState(true);
