@@ -3,8 +3,8 @@ import "./App.css";
 
 function App() {
   // Images for X and O
-  const PLAYER_X_IMAGE = "https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4";
-  const PLAYER_O_IMAGE = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e";
+  const PLAYER_X_IMAGE = "/images/walid-regragui.jpg"; // Replace with your image filename
+  const PLAYER_O_IMAGE = "/images/abdellatif-wahbi.jpg"; // Replace with your image filename
   
   // Game state
   const [board, setBoard] = useState(Array(9).fill(null));
