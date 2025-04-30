@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.x-icon, .o-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.x-icon img, .o-icon img {
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.x-icon img {
+  border-color: #EF4444;
+  animation: pulse 2s infinite;
+}
+
+.o-icon img {
+  border-color: #3B82F6;
+  animation: pulse 2s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .game-board {
+    max-width: 100%;
+  }
+  
+  .x-icon img, .o-icon img {
+    width: 50px;
+    height: 50px;
+  }
+}
