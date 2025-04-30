@@ -81,7 +81,7 @@ function App() {
         {board[index] === 'X' && (
           <div className="x-icon">
             <img 
-              src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4" 
+              src={PLAYER_X_IMAGE} 
               alt="X" 
               className="w-16 h-16 object-cover rounded-full"
             />
@@ -90,7 +90,7 @@ function App() {
         {board[index] === 'O' && (
           <div className="o-icon">
             <img 
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" 
+              src={PLAYER_O_IMAGE} 
               alt="O" 
               className="w-16 h-16 object-cover rounded-full"
             />
